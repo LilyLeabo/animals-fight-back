@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://stage/tiles.tres" type="MeshLibrary" id=1]
 [ext_resource path="res://stage/floor_mesh.tres" type="ArrayMesh" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://enemy/enemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://default_env.tres" type="Environment" id=6]
+[ext_resource path="res://Zombie.tscn" type="PackedScene" id=7]
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.0
@@ -340,3 +341,6 @@ shape = SubResource( 7 )
 [node name="CollisionShape2" type="CollisionShape" parent="SoundArea3"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.4845, 5.19958, 26.4846 )
 shape = SubResource( 8 )
+
+[node name="scene" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0368824, -8.0009, 0.677062 )
